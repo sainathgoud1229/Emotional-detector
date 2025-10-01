@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emotional Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Emotional Detector</h1>
+    <p class="sub">Type a sentence and I'll detect the emotion.</p>
+
+    <textarea id="inputText" placeholder="Write something..."></textarea>
+
+    <div class="controls">
+      <label for="backendUrl">API URL:</label>
+      <input id="backendUrl" value="http://localhost:3000/detect" />
+      <button id="detectBtn">Detect Emotion</button>
+    </div>
+
+    <div id="result" class="result">
+      <h2>Result</h2>
+      <div id="summary">No detection yet.</div>
+      <div id="scores" class="scores"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

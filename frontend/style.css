@@ -1,0 +1,74 @@
+/* style.css */
+:root {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  --card-bg: #ffffff;
+  --accent: #6d28d9;
+  --muted: #666;
+}
+
+body {
+  background: linear-gradient(180deg,#f5f7fb,#fff);
+  margin:0;
+  padding:40px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:100vh;
+}
+
+.container {
+  width:720px;
+  max-width:96%;
+  background:var(--card-bg);
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(20,20,40,0.08);
+  padding:28px;
+}
+
+h1 { margin:0 0 6px; font-size:28px; }
+.sub { margin:0 0 14px; color:var(--muted); }
+
+textarea {
+  width:100%;
+  height:120px;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #e6e6f0;
+  font-size:16px;
+  resize:vertical;
+}
+
+.controls {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top:12px;
+}
+
+.controls input {
+  flex:1;
+  padding:8px 10px;
+  border-radius:6px;
+  border:1px solid #e6e6f0;
+}
+
+.controls button {
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.result { margin-top:18px; }
+#summary { font-weight:700; margin:8px 0; }
+.scores { display:flex; gap:8px; flex-wrap:wrap; }
+.score-chip {
+  background:#f3f4f8;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid #eee;
+  font-size:14px;
+}
